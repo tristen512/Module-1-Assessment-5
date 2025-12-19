@@ -13,4 +13,4 @@ This is a fun Superhero App that allows users to see some of their favourite sup
 - Explore the superhero cards
 
 ## Author
-Created by [Your Name]
+Created by Tristen512
