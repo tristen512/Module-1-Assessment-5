@@ -16,7 +16,8 @@
     <section class="app-container">
 
         <div class="card">
-            <img id="heroImage" src="images/hero-default.png" alt="Superhero">
+            <!-- Added onerror attribute for fallback placeholder -->
+            <img id="heroImage" src="hero-default.png" alt="Superhero" onerror="this.src='hero-default.png'">
             <h2 id="heroName">Choose a Hero</h2>
             <p id="heroPower" class="power-text">Select a hero to see their abilities.</p>
         </div>
