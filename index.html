@@ -3,50 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Superhero App</title>
+    <title>Superhero Showcase</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <h1>🌟 Superhero App 🌟</h1>
-        <p>Explore your favourite superheroes!</p>
+        <h1>Superhero Showcase</h1>
+        <p class="subtitle">Discover powers, abilities & more</p>
     </header>
 
-    <main>
-        <section class="hero-card superman">
-            <img src="images/superman.png" alt="Superman">
-            <h2>Superman</h2>
-            <p>Superman possesses superhuman strength, flight, and heat vision. He is the symbol of hope for humanity.</p>
-        </section>
+    <section class="app-container">
 
-        <section class="hero-card spiderman">
-            <img src="images/spiderman.png" alt="Spider-Man">
-            <h2>Spider-Man</h2>
-            <p>Peter Parker became Spider‑Man after a radioactive spider bite gave him agility, wall‑crawling, and a “spidey‑sense.”</p>
-        </section>
+        <div class="card">
+            <img id="heroImage" src="images/hero-default.png" alt="Superhero">
+            <h2 id="heroName">Choose a Hero</h2>
+            <p id="heroPower" class="power-text">Select a hero to see their abilities.</p>
+        </div>
 
-        <section class="hero-card wonderwoman">
-            <img src="images/wonderwoman.png" alt="Wonder Woman">
-            <h2>Wonder Woman</h2>
-            <p>Wonder Woman has superhuman strength and speed, and wields the Lasso of Truth to defend justice.</p>
-        </section>
+        <div class="controls">
+            <h3>Select a Superhero</h3>
+            <select id="heroSelect">
+                <option value="">-- Choose --</option>
+                <option value="flash">The Flash</option>
+                <option value="thor">Thor</option>
+                <option value="ironman">Iron Man</option>
+                <option value="wanda">Scarlet Witch</option>
+                <option value="spiderman">Spider-Man</option>
+            </select>
 
-        <section class="hero-card batman">
-            <img src="images/batman.png" alt="Batman">
-            <h2>Batman</h2>
-            <p>Batman has no superpowers, but uses his detective skills, martial arts, and gadgets to fight crime in Gotham City.</p>
-        </section>
+            <button id="showBtn">Show Hero</button>
+        </div>
 
-        <section class="hero-card ironman">
-            <img src="images/ironman.png" alt="Iron Man">
-            <h2>Iron Man</h2>
-            <p>Tony Stark is a genius inventor in a powered armor suit that grants flight, weapons, and advanced tech abilities.</p>
-        </section>
-    </main>
+    </section>
 
     <footer>
-        <p>© 2025 Superhero App | Created by You</p>
+        <p>Created for Module 1 - Assessment 5 • IT Varsity</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
